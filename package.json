@@ -1,0 +1,26 @@
+{
+    "name": "krafix",
+    "displayName": "krafix",
+    "description": "krafix support",
+    "version": "18.7.0",
+    "publisher": "kodetech",
+    "engines": {
+        "vscode": "^1.25.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "glsl",
+            "aliases": ["GLSL", "glsl"],
+            "extensions": [".comp.glsl",".frag.glsl",".geom.glsl",".tesc.glsl",".tese.glsl",".vert.glsl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "glsl",
+            "scopeName": "source.glsl",
+            "path": "./syntaxes/GLSL.tmLanguage"
+        }]
+    }
+}
